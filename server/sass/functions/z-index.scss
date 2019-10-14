@@ -1,0 +1,12 @@
+$z-index: (
+// logo: 2,
+// videotint: 1,
+);
+
+@function z-index($value) {
+  @return map-get($z-index, $value);
+}
+
+@mixin z-index($value) {
+  z-index: z-index($value);
+}
