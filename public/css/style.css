@@ -44,6 +44,9 @@ table {
 p {
   font-size: 16px; }
 
+h1 {
+  color: white; }
+
 .u-margin-bottom-xs {
   margin-bottom: .25rem; }
 
@@ -61,4 +64,6 @@ p {
 
 .header {
   background-color: red;
-  height: 40vh; }
+  height: 20vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); }
