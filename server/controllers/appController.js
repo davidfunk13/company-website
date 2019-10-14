@@ -1,7 +1,4 @@
-  
-import express from 'express';
-
-const appController = {
+  const appController = {
     landing: (req, res) => {
             res.render("index");
     },
@@ -10,4 +7,4 @@ const appController = {
     }
 }; 
 
-export default appController;
+module.exports = appController;
