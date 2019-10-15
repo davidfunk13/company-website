@@ -112,18 +112,18 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em; }
   .section__1 {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     position: absolute;
     top: 80vh;
     background-color: #F5F3F5;
-    height: 100vh;
+    height: 85vh;
     padding-top: 7rem; }
     .section__1 h1 {
       text-align: center; }
   .section__2 {
     position: relative;
-    top: 79vh;
+    top: 72vh;
     background-color: #497499;
     height: 100vh;
     z-index: -1; }
