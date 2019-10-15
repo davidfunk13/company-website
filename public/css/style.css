@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,30 +83,56 @@ body {
   z-index: 1; }
 
 .header__titleBlock {
-  width: 80%;
+  width: 90%;
   position: absolute;
-  top: 12rem;
+  top: 13rem;
   z-index: 3;
   transform: translateX(-50%);
   margin-left: 50%; }
   .header__titleBlock h1 {
     color: #F5F3F5;
     font-family: 'Baloo', cursive;
-    font-size: 2.5em; }
+    font-size: 4em;
+    text-align: center; }
   .header__titleBlock h2 {
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em; }
+    font-size: 1em;
+    text-align: center; }
 
 .section {
   width: 100%; }
+  .section h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em; }
+  .section p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em; }
   .section__1 {
     position: absolute;
     top: 80vh;
     background-color: #F5F3F5;
-    height: 100vh; }
+    height: 100vh;
+    padding-top: 7rem; }
+    .section__1 h1 {
+      text-align: center; }
   .section__2 {
     position: absolute;
     top: 100vh;
     background-color: #F5F3F5;
     height: 100vh; }
+  .section__content {
+    height: 100%; }
+
+.content {
+  width: 100%;
+  display: flex; }
+  .content__s1 {
+    flex-flow: row; }
+    .content__s1--text {
+      padding: 1.25rem 0rem 0rem 1.25rem; }
+    .content__s1--img {
+      padding: 1.25rem; }
+      .content__s1--img img {
+        width: 100%;
+        padding-bottom: 1.25rem; }

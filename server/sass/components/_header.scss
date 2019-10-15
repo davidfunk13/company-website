@@ -24,9 +24,9 @@
     }
 
     &__titleBlock {
-        width: 80%;
+        width: 90%;
         position: absolute;
-        top: 12rem;
+        top: 13rem;
         @include z-index(title);
         transform: translateX(-50%);
         margin-left: 50%;
@@ -34,16 +34,16 @@
         & h1 {
             color: $c-light;
             font-family: 'Baloo', cursive;
-            font-size: 2.5em;
+            font-size: 4em;
+            text-align: center;
         }
 
         & h2 {
             color: black;
             font-family: 'Montserrat', sans-serif;
             font-size: 1em;
+            text-align: center;
         }
 
     }
-}
-
-;
+};
