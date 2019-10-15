@@ -73,6 +73,7 @@ body {
   z-index: 1; }
 
 .header__titleBlock {
+  width: 80%;
   position: absolute;
   top: 12rem;
   z-index: 3;
@@ -81,10 +82,11 @@ body {
   .header__titleBlock h1 {
     color: #F5F3F5;
     font-family: 'Baloo', cursive;
-    font-size: 4em; }
+    font-size: 3em; }
   .header__titleBlock h2 {
     color: black;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em; }
 
 .section {
   width: 100%; }
