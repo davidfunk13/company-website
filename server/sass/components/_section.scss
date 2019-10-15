@@ -7,6 +7,11 @@
         font-family: 'Amatic SC', cursive;
         font-size: 2em;
     }
+    
+    & h2 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.75em;
+    }
 
     & p {
         font-family: 'Josefin Sans', sans-serif;
@@ -14,6 +19,8 @@
     }
 
     &__1 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
         & h1 {
             text-align: center;
         }
@@ -26,16 +33,13 @@
     }
 
     &__2 {
-        position: absolute;
-        top: 100vh;
-        background-color: $c-light;
+        position: relative;
+        top: 79vh;
+        background-color: $c-main;
         height: 100vh;
+        @include z-index(section2)
     }
 
-    &__content {
-        height: 100%;
-
-    }
 }
 
 ;
