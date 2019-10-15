@@ -1,7 +1,8 @@
 $z-index: (
-title: 3,
-overlay: 2,
-img: 1,
+  logo:3,
+  title: 3,
+  overlay: 2,
+  img: 1,
 );
 
 @function z-index($value) {

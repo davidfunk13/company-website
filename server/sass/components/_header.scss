@@ -2,6 +2,17 @@
 
 .header {
 
+    &__logo-container{ 
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        @include z-index(logo);
+    }
+
+    &__logo{
+        height: 4rem;
+    }
+
     &__shape {
         position: relative;
         background-image: linear-gradient(to right bottom, $c-light-accent-transparent, $c-main-transparent), url('/img/header-bg.jpg');
@@ -23,7 +34,7 @@
         & h1 {
             color: $c-light;
             font-family: 'Baloo', cursive;
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
         & h2 {
