@@ -1,6 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Montserrat&display=swap');
+
 .header {
-    background-color: red;
-    height: 20vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+
+    position: relative;
+
+    // &__overlay{
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: $c-light;
+    //     position: absolute;
+    //     top: 0;
+    //     opacity: .4;
+    //     @include z-index(overlay)
+    // }
+
+    &__shape {
+        position: relative;
+        background-image: url('/img/header-background.png');
+        background-size: 35rem;
+        background-position: center;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+        height: 40vh;
+        @include z-index(img)
+    }
+
+    &__titleBlock {
+        position: absolute;
+        top: 4rem;
+        left: 2rem;
+        @include z-index(title);
+        & h1 {
+            color: $c-light;
+            font-family: 'Baloo', cursive;
+            font-size: 4em;
+        }
+
+        & h2 {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
 }
+
+;

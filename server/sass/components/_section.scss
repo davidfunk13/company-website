@@ -1,0 +1,17 @@
+.section{
+width: 100%;
+    &__1{
+        position: absolute;
+        top: 15rem;
+        background-color: $c-light;
+        height: 50vh;
+        border-bottom: 6px solid red;
+    }
+    &__2{
+        position: absolute;
+        top: 35rem;
+        background-color: $c-main;
+        height: 50vh;
+        border-bottom: 6px solid red;
+    }
+}

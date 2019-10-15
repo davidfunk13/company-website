@@ -1,6 +1,7 @@
 $z-index: (
-// logo: 2,
-// videotint: 1,
+title: 3,
+overlay: 2,
+img: 1,
 );
 
 @function z-index($value) {

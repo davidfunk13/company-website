@@ -1,7 +1,8 @@
 @import './base/reset';
+@import './base/colors';
+@import './functions/z-index';
 @import './base/base';
 @import './base/typography';
-@import './base/colors';
-@import './functions/z-index.scss';
 @import './base/utility-classes';
 @import './components/header';
+@import './components/section';
