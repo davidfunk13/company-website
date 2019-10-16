@@ -1,6 +1,4 @@
 .content {
-    width: 100%;
-    height: 100%;
 
     &__s1 {
         display: flex;
@@ -40,7 +38,7 @@
     }
 
     &__s2 {
-        margin: 0 auto;
+        padding-top: 2rem;
 
         & h2 {
             font-family: 'Raleway', sans-serif;
