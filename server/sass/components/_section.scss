@@ -34,7 +34,7 @@
         position: relative;
         top: 72vh;
         background-color: $c-dark;
-        height: 100vh;
+        height: 100%;
         @include z-index(section2);
 
     }

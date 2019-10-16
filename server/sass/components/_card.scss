@@ -8,7 +8,6 @@
     flex-flow: row;
     justify-content: center;
     width: 100%;
-    // position: relative;
 }
 
 .card-row {
@@ -25,18 +24,36 @@
     margin-bottom: 1rem;
 
     &__side {
-        width: 5rem;
-        height: 10rem;
+        width: 10rem;
+        height: 15rem;
         transition: all .8s;
-        &--front{
-            background-color: red;
-            
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        padding: .25rem;
+
+        &--front {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            text-align: center;
+
+            color: $c-dark;
+
+            & i {
+                font-size: 10em;
+            }
+
+            & p {
+                color: $c-dark;
+            }
+
+            background-color: $c-light;
         }
-        &--back{
+
+        &--back {
             position: absolute;
             top: 0;
-            backface-visibility: hidden;
-            background-color: white;
+            background-color: $c-light-accent;
             transform: rotateY(180deg);
         }
     }
@@ -44,6 +61,7 @@
     &:hover &__side--front {
         transform: rotateY(180deg);
     }
+
     &:hover &__side--back {
         transform: rotateY(0);
     }

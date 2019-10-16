@@ -121,7 +121,7 @@ body {
     position: relative;
     top: 72vh;
     background-color: #232836;
-    height: 100vh;
+    height: 100%;
     z-index: -1; }
     .section__2 h1 {
       font-family: 'Raleway', sans-serif;
@@ -195,16 +195,27 @@ body {
   -moz-perspective: 150rem;
   margin-bottom: 1rem; }
   .card__side {
-    width: 5rem;
-    height: 10rem;
-    transition: all .8s; }
+    width: 10rem;
+    height: 15rem;
+    transition: all .8s;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    padding: .25rem; }
     .card__side--front {
-      background-color: red; }
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      text-align: center;
+      color: #232836;
+      background-color: #F5F3F5; }
+      .card__side--front i {
+        font-size: 10em; }
+      .card__side--front p {
+        color: #232836; }
     .card__side--back {
       position: absolute;
       top: 0;
-      backface-visibility: hidden;
-      background-color: white;
+      background-color: #72AEC4;
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
