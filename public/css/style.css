@@ -173,29 +173,40 @@ body {
       font-size: 10em;
       color: white; }
 
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem; }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
-  .card__side {
-    height: 15rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10rem;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: all .8s ease; }
-    .card__side--front {
-      background-color: white; }
-    .card__side--back {
-      transform: rotateY(180deg);
-      background-color: black; }
+.card-container {
+  width: 100%;
+  height: 100%; }
+
+.col {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%; }
 
 .card-row {
-  transform: translateX(-50%);
-  margin-left: 50%; }
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  margin-bottom: 1rem; }
+  .card__side {
+    width: 5rem;
+    height: 10rem;
+    transition: all .8s; }
+    .card__side--front {
+      background-color: red; }
+    .card__side--back {
+      position: absolute;
+      top: 0;
+      backface-visibility: hidden;
+      background-color: white;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }

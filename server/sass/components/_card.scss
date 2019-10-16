@@ -1,38 +1,50 @@
-.card {
-    perspective: 150rem;
-    -moz-perspective: 150rem;
+.card-container {
+    width: 100%;
+    height: 100%;
+}
 
-    &:hover &__side--front {
-        transform: rotateY(-180deg);
-    }
-
-    &:hover &__side--back {
-        transform: rotateY(0);
-    }
-
-    &__side {
-        height: 15rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 10rem;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        overflow: hidden;
-        transition: all .8s ease;
-
-        &--front {
-            background-color: white;
-        }
-
-        &--back {
-            transform: rotateY(180deg);
-            background-color: black;
-        }
-    }
+.col {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    // position: relative;
 }
 
 .card-row {
-    transform: translateX(-50%);
-    margin-left: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    margin-bottom: 1rem;
+
+    &__side {
+        width: 5rem;
+        height: 10rem;
+        transition: all .8s;
+        &--front{
+            background-color: red;
+            
+        }
+        &--back{
+            position: absolute;
+            top: 0;
+            backface-visibility: hidden;
+            background-color: white;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
 }
