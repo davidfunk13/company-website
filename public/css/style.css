@@ -122,7 +122,17 @@ body {
     z-index: -1; }
     .section__2 h1 {
       font-family: 'Raleway', sans-serif;
-      font-size: 2em;
+      font-size: 2.5em;
+      text-align: center;
+      color: white; }
+  .section__3 {
+    padding-top: 6rem;
+    top: 165vh;
+    background-color: #232836;
+    z-index: -1; }
+    .section__3 h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.5em;
       text-align: center;
       color: white; }
 
@@ -206,6 +216,7 @@ body {
       color: #232836;
       background-color: #F5F3F5; }
       .card__side--front i {
+        margin: 1rem 0 1rem 0;
         font-size: 10em; }
       .card__side--front p {
         color: #232836; }

@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo|Montserrat&display=swap');
 
 .header {
-position: relative;
-    &__logo-container{ 
+    position: relative;
+
+    &__logo-container {
         position: absolute;
         top: 1.5rem;
         left: 1.5rem;
         @include z-index(logo);
     }
 
-    &__logo{
+    &__logo {
         height: 4rem;
     }
 
@@ -47,4 +48,6 @@ position: relative;
         }
 
     }
-};
+}
+
+;
