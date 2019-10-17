@@ -3,6 +3,7 @@
 
 .section {
     width: 100%;
+    position: absolute;
 
     &__1 {
 
@@ -14,8 +15,7 @@
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        position: absolute;
-        top: 80vh;
+        top: 78vh;
         background-color: $c-light;
         height: 85vh;
         padding-top: 7rem;
@@ -31,10 +31,8 @@
         }
 
         padding-top: 6rem;
-        position: relative;
-        top: 72vh;
+        top: 165vh;
         background-color: $c-dark;
-        height: 100%;
         @include z-index(section2);
 
     }
