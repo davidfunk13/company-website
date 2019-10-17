@@ -32,11 +32,12 @@
 
         padding-top: 6rem;
         top: 165vh;
+        height: 135vh;
         background-color: $c-dark;
         @include z-index(section2);
 
     }
-    
+
     &__3 {
 
         & h1 {
@@ -47,8 +48,8 @@
         }
 
         padding-top: 6rem;
-        top: 165vh;
-        background-color: $c-dark;
+        top: 315vh;
+        background-color: green;
         @include z-index(section2);
 
     }

@@ -21,12 +21,15 @@
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
+    -webkit-perspective: 150rem;
     margin-bottom: 1rem;
 
     &__side {
         width: 10rem;
         height: 15rem;
         transition: all .8s;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 1rem;
         padding: .25rem;

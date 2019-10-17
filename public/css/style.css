@@ -83,18 +83,24 @@ body {
     height: 95vh;
     z-index: 1; }
   .header__titleBlock {
-    width: 90%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 13rem;
-    z-index: 2;
+    width: 100%;
     transform: translateX(-50%);
-    margin-left: 50%; }
+    margin-left: 50%;
+    z-index: 2; }
     .header__titleBlock h1 {
       color: #F5F3F5;
       font-family: 'Baloo', cursive;
       font-size: 4em;
       text-align: left;
       padding-left: 1rem; }
+      @media (max-width: 767px) {
+        .header__titleBlock h1 {
+          color: red; } }
     .header__titleBlock h2 {
       color: black;
       font-family: 'Montserrat', sans-serif;
@@ -118,6 +124,7 @@ body {
   .section__2 {
     padding-top: 6rem;
     top: 165vh;
+    height: 135vh;
     background-color: #232836;
     z-index: -1; }
     .section__2 h1 {
@@ -127,8 +134,8 @@ body {
       color: white; }
   .section__3 {
     padding-top: 6rem;
-    top: 165vh;
-    background-color: #232836;
+    top: 315vh;
+    background-color: green;
     z-index: -1; }
     .section__3 h1 {
       font-family: 'Raleway', sans-serif;
@@ -200,11 +207,14 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
   margin-bottom: 1rem; }
   .card__side {
     width: 10rem;
     height: 15rem;
     transition: all .8s;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 1rem;
     padding: .25rem; }

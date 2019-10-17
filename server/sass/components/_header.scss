@@ -25,14 +25,20 @@
     }
 
     &__titleBlock {
-        width: 90%;
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         top: 13rem;
-        @include z-index(title);
+        width: 100%;
         transform: translateX(-50%);
         margin-left: 50%;
+        @include z-index(title);
 
         & h1 {
+            @include breakpoint(xs){
+                color: red;
+            }
             color: $c-light;
             font-family: 'Baloo', cursive;
             font-size: 4em;
