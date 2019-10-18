@@ -11,6 +11,10 @@
             font-family: 'Amatic SC', cursive;
             font-size: 2em;
             text-align: center;
+            @include typographyBreakpoint(600px) {
+                font-size: 4em;
+
+            }
         }
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -18,15 +22,40 @@
         background-color: $c-light;
         height: 85vh;
 
-        @include breakpoint(675px_high) {
+        @include breakpointHeight(675px) {
             height: 75vh;
         }
 
-        @include breakpoint(768px_high) {
+        @include breakpointHeight(768px) {
             height: 65vh;
         }
-        @include breakpoint(900px_high) {
+
+        @include breakpointHeight(900px) {
             height: 60vh;
+        }
+
+        @include breakpointHeight(1200px) {
+            height: 45vh;
+        }
+
+        @include breakpointWidth(460px) {
+            height: 100vh;
+        }
+
+        @include breakpointWidth(600px) {
+            height: 120vh;
+        }
+
+        @include breakpointWidth(740px) {
+            height: 140vh;
+        }
+
+        @include breakpointWidth(1024px) {
+            height: 160vh;
+        }
+
+        @include breakpointWidth(1200px) {
+            height: 175vh;
         }
     }
 
@@ -45,14 +74,24 @@
         background-color: $c-dark;
         @include z-index(section2);
 
-        @include breakpoint(675px_high) {
+        @include breakpointHeight(675px) {
             top: 155vh;
         }
-        @include breakpoint(768px_high) {
+
+        @include breakpointHeight(768px) {
             top: 130vh;
         }
-        @include breakpoint(900px_high) {
-            top: 125vh;
+
+        @include breakpointHeight(900px) {
+            top: 106vh;
+        }
+        
+        @include breakpointHeight(1200px) {
+            top: 86vh;
+        }
+
+        @include breakpointWidth(460px) {
+            padding-top: 12rem;
         }
     }
 

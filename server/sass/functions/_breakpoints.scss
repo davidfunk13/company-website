@@ -1,23 +1,17 @@
-@mixin breakpoint($class) {
-   @if $class==675px_high {
-      @media (min-height: 675px) {
+@mixin breakpointHeight($class) {
+      @media (min-height: $class) {
          @content;
       }
-   }
+}
 
-   @else if $class==768px_high {
-      @media (min-height: 768px) {
+@mixin breakpointWidth($class) {
+      @media (min-width: $class) {
          @content;
       }
-   }
+}
 
-   @else if $class==900px_high {
-      @media (min-height: 900px) {
+@mixin typographyBreakpoint($width) {
+      @media (min-width: $width) {
          @content;
       }
-   }
-
-   @else {
-      @warn "breakpoint not found" $class;
-   }
 }

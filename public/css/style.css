@@ -48,7 +48,8 @@ p {
   font-size: 16px; }
 
 body {
-  background: #F5F3F5; }
+  background: #F5F3F5;
+  height: 100%; }
 
 .u-margin-bottom-xs {
   margin-bottom: .25rem; }
@@ -85,6 +86,12 @@ body {
     @media (min-height: 768px) {
       .header__shape {
         height: 75vh; } }
+    @media (min-height: 1000px) {
+      .header__shape {
+        height: 55vh; } }
+    @media (min-height: 1200px) {
+      .header__shape {
+        height: 48vh; } }
   .header__titleBlock {
     position: absolute;
     display: flex;
@@ -118,6 +125,9 @@ body {
       font-family: 'Amatic SC', cursive;
       font-size: 2em;
       text-align: center; }
+      @media (min-width: 600px) {
+        .section__1 h1 {
+          font-size: 4em; } }
     @media (min-height: 675px) {
       .section__1 {
         height: 75vh; } }
@@ -127,6 +137,24 @@ body {
     @media (min-height: 900px) {
       .section__1 {
         height: 60vh; } }
+    @media (min-height: 1200px) {
+      .section__1 {
+        height: 45vh; } }
+    @media (min-width: 460px) {
+      .section__1 {
+        height: 100vh; } }
+    @media (min-width: 600px) {
+      .section__1 {
+        height: 120vh; } }
+    @media (min-width: 740px) {
+      .section__1 {
+        height: 140vh; } }
+    @media (min-width: 1024px) {
+      .section__1 {
+        height: 160vh; } }
+    @media (min-width: 1200px) {
+      .section__1 {
+        height: 175vh; } }
   .section__2 {
     padding-top: 6rem;
     top: 165vh;
@@ -145,7 +173,13 @@ body {
         top: 130vh; } }
     @media (min-height: 900px) {
       .section__2 {
-        top: 125vh; } }
+        top: 106vh; } }
+    @media (min-height: 1200px) {
+      .section__2 {
+        top: 86vh; } }
+    @media (min-width: 460px) {
+      .section__2 {
+        padding-top: 12rem; } }
   .section__3 {
     padding-top: 6rem;
     top: 315vh;
@@ -178,6 +212,19 @@ body {
     .content__s1--img img {
       width: 100%;
       padding-bottom: 1.25rem; }
+  @media (min-width: 800px) {
+    .content__s1 {
+      padding: 1rem 4rem; } }
+  @media (min-width: 1100px) {
+    .content__s1 {
+      padding: 2rem 5rem; } }
+  @media (min-width: 600px) {
+    .content__s1 {
+      font-size: 1.25em;
+      line-height: 1.25em; } }
+  @media (min-width: 1200px) {
+    .content__s1 {
+      font-size: 1.75em; } }
 
 .content__s2 {
   padding-top: 2rem; }
