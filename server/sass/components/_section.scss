@@ -15,10 +15,19 @@
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        top: 78vh;
         background-color: $c-light;
         height: 85vh;
-        padding-top: 7rem;
+
+        @include breakpoint(675px_high) {
+            height: 75vh;
+        }
+
+        @include breakpoint(768px_high) {
+            height: 65vh;
+        }
+        @include breakpoint(900px_high) {
+            height: 60vh;
+        }
     }
 
     &__2 {
@@ -32,10 +41,19 @@
 
         padding-top: 6rem;
         top: 165vh;
-        height: 135vh;
+
         background-color: $c-dark;
         @include z-index(section2);
 
+        @include breakpoint(675px_high) {
+            top: 155vh;
+        }
+        @include breakpoint(768px_high) {
+            top: 130vh;
+        }
+        @include breakpoint(900px_high) {
+            top: 125vh;
+        }
     }
 
     &__3 {

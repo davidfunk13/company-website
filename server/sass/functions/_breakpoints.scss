@@ -1,35 +1,23 @@
 @mixin breakpoint($class) {
-   @if $class==title {
-      @media (max-width: 767px) {
-         @content;
-      }
-   }
-   
-   @if $class==xs {
-      @media (max-width: 767px) {
+   @if $class==675px_high {
+      @media (min-height: 675px) {
          @content;
       }
    }
 
-   @else if $class==sm {
-      @media (min-width: 768px) {
+   @else if $class==768px_high {
+      @media (min-height: 768px) {
          @content;
       }
    }
 
-   @else if $class==md {
-      @media (min-width: 992px) {
-         @content;
-      }
-   }
-
-   @else if $class==lg {
-      @media (min-width: 1200px) {
+   @else if $class==900px_high {
+      @media (min-height: 900px) {
          @content;
       }
    }
 
    @else {
-      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+      @warn "breakpoint not found" $class;
    }
 }
