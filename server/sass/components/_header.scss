@@ -21,25 +21,17 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         height: 95vh;
-
-        @include breakpointHeight(768px) {
-            height: 75vh;
-        }
-        @include breakpointHeight(1000px) {
-            height: 55vh;
-        }
-        @include breakpointHeight(1200px) {
-            height: 48vh;
+        @include z-index(img);
+        @include breakpointHeight(840px){
+            height: 70vh;
         }
 
-        @include z-index(img)
     }
 
     &__titleBlock {
         position: absolute;
         display: flex;
         flex-direction: column;
-        align-items: center;
         top: 13rem;
         transform: translateX(-50%);
         margin-left: 50%;
@@ -51,14 +43,29 @@
             font-family: 'Baloo', cursive;
             font-size: 4em;
             text-align: left;
-            padding-left: 1rem;
         }
 
         & h2 {
             color: black;
             font-family: 'Montserrat', sans-serif;
             font-size: 1em;
-            max-width: 85%;
+        }
+
+        @include breakpointWidth(580px) {
+
+            & h1 {
+                color: $c-light;
+                font-family: 'Baloo', cursive;
+                font-size: 5em;
+                text-align: left;
+            }
+
+            & h2 {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.25em;
+            }
+
         }
 
     }

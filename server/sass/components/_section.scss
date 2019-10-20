@@ -2,61 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300|Raleway:500&display=swap');
 
 .section {
-    width: 100%;
-    position: absolute;
-
     &__1 {
 
         & h1 {
             font-family: 'Amatic SC', cursive;
             font-size: 2em;
             text-align: center;
-            @include typographyBreakpoint(600px) {
-                font-size: 4em;
-
-            }
         }
+
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         background-color: $c-light;
+        margin-top: -15vh;
+        padding: 7rem 1rem 1rem 1rem;
         height: 85vh;
-
-        @include breakpointHeight(675px) {
+        @include breakpointHeight(840px){
+            padding-top: 10rem;
             height: 75vh;
-        }
-
-        @include breakpointHeight(768px) {
-            height: 65vh;
-        }
-
-        @include breakpointHeight(900px) {
-            height: 60vh;
-        }
-
-        @include breakpointHeight(1200px) {
-            height: 45vh;
-        }
-
-        @include breakpointWidth(460px) {
-            height: 100vh;
-        }
-
-        @include breakpointWidth(600px) {
-            height: 120vh;
-        }
-
-        @include breakpointWidth(740px) {
-            height: 140vh;
-        }
-
-        @include breakpointWidth(1024px) {
-            height: 160vh;
-        }
-
-        @include breakpointWidth(1200px) {
-            height: 175vh;
-        }
+        };
+        
     }
 
     &__2 {
@@ -68,31 +33,18 @@
             color: white;
         }
 
-        padding-top: 6rem;
-        top: 165vh;
+        padding-top: 10rem;
+        margin-top: -20vh;
 
         background-color: $c-dark;
         @include z-index(section2);
+        @include breakpointHeight(840px){
+            padding-top: 13rem;
+        };
+        @include breakpointHeight(1040px){
+            padding-top: 15rem;
+        };
 
-        @include breakpointHeight(675px) {
-            top: 155vh;
-        }
-
-        @include breakpointHeight(768px) {
-            top: 130vh;
-        }
-
-        @include breakpointHeight(900px) {
-            top: 106vh;
-        }
-        
-        @include breakpointHeight(1200px) {
-            top: 86vh;
-        }
-
-        @include breakpointWidth(460px) {
-            padding-top: 12rem;
-        }
     }
 
     &__3 {
@@ -108,6 +60,7 @@
         top: 315vh;
         background-color: green;
         @include z-index(section2);
+        
     }
 
 }

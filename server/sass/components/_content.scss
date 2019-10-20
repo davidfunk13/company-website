@@ -14,8 +14,6 @@
             font-size: 1em;
         }
 
-    
-
         &--text {
             padding: 1.25rem 0rem 0rem 1.25rem;
         }
@@ -36,23 +34,6 @@
                 width: 100%;
                 padding-bottom: 1.25rem;
             }
-        }
-
-        @include breakpointWidth(800px) {
-            padding: 1rem 4rem;
-        }
-
-        @include breakpointWidth(1100px) {
-            padding: 2rem 5rem;
-        }
-
-        @include typographyBreakpoint(600px) {
-            font-size: 1.25em;
-            line-height: 1.25em;
-        }
-
-        @include typographyBreakpoint(1200px) {
-            font-size: 1.75em;
         }
     }
 
