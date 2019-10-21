@@ -1,5 +1,7 @@
 .content {
-
+    @include breakpointWidth(650px){
+        font-size: 1.5em;
+    }
     &__s1 {
         display: flex;
         flex-flow: row;
@@ -51,4 +53,5 @@
         }
 
     }
+
 }

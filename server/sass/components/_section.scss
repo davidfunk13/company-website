@@ -10,18 +10,10 @@
             text-align: center;
         }
 
-
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         background-color: $c-light;
-        margin-top: -15vh;
-        padding: 7rem 1rem 1rem 1rem;
-        height: 85vh;
-        @include breakpointHeight(840px){
-            padding-top: 10rem;
-            height: 75vh;
-        };
-        
+        padding-bottom: 25%;
     }
 
     &__2 {
@@ -33,18 +25,15 @@
             color: white;
         }
 
-        padding-top: 10rem;
-        margin-top: -20vh;
+        padding-top: 27%;
+        margin-top: -25%;
 
         background-color: $c-dark;
         @include z-index(section2);
-        @include breakpointHeight(840px){
-            padding-top: 13rem;
-        };
-        @include breakpointHeight(1040px){
-            padding-top: 15rem;
-        };
 
+        @include breakpointWidth(720px) {
+            
+        }
     }
 
     &__3 {
@@ -60,7 +49,7 @@
         top: 315vh;
         background-color: green;
         @include z-index(section2);
-        
+
     }
 
 }
