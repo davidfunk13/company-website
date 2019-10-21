@@ -65,6 +65,18 @@ body {
 .u-margin-bottom-xlg {
   margin-bottom: 1rem; }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1; }
+
 .header__logo-container {
   position: absolute;
   top: 1.5rem;
@@ -188,14 +200,23 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
-
-.col {
-  display: flex;
   flex-flow: row;
-  justify-content: center;
-  width: 100%; }
+  justify-content: center; }
+  @media (min-width: 550px) {
+    .card-container {
+      flex-flow: column;
+      align-items: center; } }
+
+.card-row {
+  display: flex;
+  flex-flow: column;
+  width: 45vw;
+  height: 100%; }
+  @media (min-width: 550px) {
+    .card-row {
+      flex-flow: row;
+      justify-content: space-evenly;
+      width: 100%; } }
 
 .card {
   perspective: 150rem;
@@ -211,9 +232,6 @@ body {
     backface-visibility: hidden;
     border-radius: 1rem;
     padding: .25rem; }
-    @media (min-width: 720px) {
-      .card__side {
-        width: 31vw; } }
     .card__side--front {
       display: flex;
       flex-flow: column;

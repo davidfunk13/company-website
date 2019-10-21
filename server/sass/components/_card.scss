@@ -2,44 +2,35 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.col {
-    display: flex;
     flex-flow: row;
     justify-content: center;
-    width: 100%;
+
+    @include breakpointWidth(550px) {
+        flex-flow: column;
+        align-items: center;
+    }
 }
 
-// .card-row {
-//     display: flex;
-//     flex-flow: column;
-//     align-items: center;
-//     width: 100%;
-//     height: 100%;
+.card-row {
+    display: flex;
+    flex-flow: column;
+    width: 45vw;
+    height: 100%;
 
-//     @include breakpointWidth(720px) {
-//         flex-flow: row;
-//         justify-content: center;
-//         align-items: unset;
-//     }
-// }
+    @include breakpointWidth(550px) {
+        flex-flow: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
 
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
     -webkit-perspective: 150rem;
-
     margin: 1rem;
 
-
     &__side {
-        @include breakpointWidth(720px) {
-            width: 31vw;
-        }
-
         width: 100%;
         height: 100%;
         transition: all .8s;
