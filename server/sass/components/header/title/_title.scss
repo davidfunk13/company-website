@@ -1,0 +1,26 @@
+@mixin title {
+    &__titleBlock {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 13rem;
+        transform: translateX(-50%);
+        margin-left: 50%;
+        @include z-index(title);
+
+
+        & h1 {
+            color: $c-light;
+            font-family: 'Baloo', cursive;
+            font-size: 4em;
+            text-align: left;
+        }
+
+        & h2 {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+        }
+
+    }
+};

@@ -1,0 +1,13 @@
+@import './1/section__1';
+@import './2/section__2';
+@import './3/section__3';
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Raleway:500&display=swap');
+
+
+.section {
+    @include section__1;
+    @include section__2;
+    @include section__3;
+};

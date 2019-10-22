@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Montserrat&display=swap');
+@import './logo/logo';
+@import './shape/shape';
+@import './title/title';
+
+.header {
+    @include header__logo;
+    @include header__shape;
+    @include title;
+};

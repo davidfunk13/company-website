@@ -1,0 +1,16 @@
+@mixin header__shape {
+    &__shape {
+        position: relative;
+        background-image: linear-gradient(to right bottom, $c-light-accent-transparent, $c-main-transparent), url('/img/header-bg.jpg');
+        background-position: center;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        height: 95vh;
+        @include z-index(img);
+
+        @include breakpointHeight(768px) {
+            height: 70vh;
+        }
+
+    }
+};

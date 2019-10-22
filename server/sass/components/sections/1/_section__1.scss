@@ -1,0 +1,14 @@
+@mixin section__1 {
+    &__1 {
+        & h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        background-color: $c-light;
+        padding-bottom: 25%;
+    }
+};
