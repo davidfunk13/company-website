@@ -14,10 +14,11 @@
     @include breakpointWidth(1000px) {
         padding: 0 9rem 0 9rem;
     }
-    
+
     @include breakpointWidth(1200px) {
         padding: 0 15rem 0 15rem;
     }
+
 
     @include content__1;
     @include content__2;

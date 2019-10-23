@@ -1,4 +1,4 @@
-@import './card-grid';
+// @import '../content/2/containers';
 
 .card {
     perspective: 150rem;
@@ -8,9 +8,9 @@
 
     &__side {
         padding-top: .25rem;
-        height: 100%;
-        max-height: 20rem;
+        height: 98%;
         width: 100%;
+        max-height: 20rem;
         transition: all .8s;
         -moz-backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
@@ -67,5 +67,4 @@
     &:hover &__side--back {
         transform: rotateY(0);
     }
-
 }
