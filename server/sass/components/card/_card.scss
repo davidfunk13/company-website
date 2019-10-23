@@ -1,29 +1,4 @@
-.card-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-
-    @include breakpointWidth(550px) {
-        flex-flow: column;
-        align-items: center;
-    }
-}
-
-.card-row {
-    display: flex;
-    flex-flow: column;
-    width: 45vw;
-    height: 100%;
-    margin: .25rem;
-
-    @include breakpointWidth(550px) {
-        flex-flow: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-}
+@import './card-grid';
 
 .card {
     perspective: 150rem;
@@ -44,6 +19,10 @@
 
         @include breakpointWidth(550px) {
             width: 28vw;
+        }
+
+        @include breakpointWidth(1000px) {
+            width: 21vw;
         }
 
         &--front {
@@ -69,8 +48,13 @@
         }
 
         &--back {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 0;
+
             background-color: $c-light-accent;
             transform: rotateY(180deg);
         }

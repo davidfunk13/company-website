@@ -3,7 +3,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 13rem;
+        top: 25%;
         transform: translateX(-50%);
         margin-left: 50%;
         @include z-index(title);

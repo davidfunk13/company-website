@@ -1,0 +1,16 @@
+@mixin content__3 {
+    &__3 {
+        
+        h2, h3 {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        & h2 {
+            font-size: 1.5em;
+        }
+        
+        & p{
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}

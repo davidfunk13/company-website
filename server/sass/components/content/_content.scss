@@ -1,0 +1,25 @@
+@import './1/content__1';
+@import './2/content__2';
+@import './3/content__3';
+
+.content {
+    @include breakpointWidth(650px) {
+        font-size: 1.5em;
+    }
+
+    @include breakpointWidth(768px) {
+        padding: 0 5rem 0 5rem;
+    }
+
+    @include breakpointWidth(1000px) {
+        padding: 0 9rem 0 9rem;
+    }
+    
+    @include breakpointWidth(1200px) {
+        padding: 0 15rem 0 15rem;
+    }
+
+    @include content__1;
+    @include content__2;
+    @include content__3;
+}

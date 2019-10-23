@@ -10,11 +10,9 @@
 
         padding-top: 27%;
         margin-top: -25%;
-
         background-color: $c-dark;
+        
         @include z-index(section2);
-
-        @include breakpointWidth(720px) {}
     }
 }
 

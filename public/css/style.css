@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo|Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:300|Raleway:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -92,7 +93,7 @@ body {
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  height: 95vh;
+  height: 90vh;
   z-index: 1; }
   @media (min-height: 768px) {
     .header__shape {
@@ -102,7 +103,7 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 13rem;
+  top: 25%;
   transform: translateX(-50%);
   margin-left: 50%;
   z-index: 2; }
@@ -120,11 +121,17 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-color: #F5F3F5;
-  padding-bottom: 25%; }
+  padding-bottom: 18%; }
   .section__1 h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center; }
+    @media (min-width: 768px) {
+      .section__1 h1 {
+        font-size: 3.75em; } }
+  @media (min-width: 1000px) {
+    .section__1 {
+      padding-bottom: 10%; } }
 
 .section__2 {
   padding-top: 27%;
@@ -138,63 +145,75 @@ body {
     color: white; }
 
 .section__3 {
-  padding-top: 6rem;
+  padding-top: 2rem;
   top: 315vh;
-  background-color: green;
+  background-color: #72AEC4;
+  height: 100vh;
   z-index: -1; }
   .section__3 h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
     text-align: center;
-    color: white; }
+    color: white;
+    padding-bottom: 2rem; }
 
 @media (min-width: 650px) {
   .content {
     font-size: 1.5em; } }
 
-.content__s1 {
+@media (min-width: 768px) {
+  .content {
+    padding: 0 5rem 0 5rem; } }
+
+@media (min-width: 1000px) {
+  .content {
+    padding: 0 9rem 0 9rem; } }
+
+@media (min-width: 1200px) {
+  .content {
+    padding: 0 15rem 0 15rem; } }
+
+.content__1 {
   display: flex;
   flex-flow: row; }
-  .content__s1 h2 {
+  .content__1 h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 1.75em; }
-  .content__s1 p {
+  .content__1 p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em; }
-  .content__s1--text {
+  .content__1--text {
     padding: 1.25rem 0rem 0rem 1.25rem; }
-  .content__s1--img {
+  .content__1--img {
     padding: 1.25rem; }
-    .content__s1--img h2 {
+    .content__1--img h2 {
       text-align: right; }
-    .content__s1--img p {
+    .content__1--img p {
       text-align: right;
       padding-top: 1.25rem; }
-    .content__s1--img img {
+    .content__1--img img {
       width: 100%;
       padding-bottom: 1.25rem; }
 
-.content__s2 {
-  padding-top: 2rem; }
-  .content__s2 h2 {
+.content__2 {
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .content__2 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em; }
-  .content__s2 p {
+  .content__2 p {
     font-family: 'Lato', sans-serif;
     color: white; }
 
-.rectangle {
-  background-color: white;
-  border-radius: 1rem; }
-  .rectangle__1 {
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
-    height: 25rem;
-    width: 20rem; }
-    .rectangle__1 i {
-      font-size: 10em;
-      color: white; }
+.content__3 h2, .content__3 h3 {
+  font-family: 'Oswald', sans-serif; }
+
+.content__3 h2 {
+  font-size: 1.5em; }
+
+.content__3 p {
+  font-family: 'Open Sans', sans-serif; }
 
 .card-container {
   width: 100%;
@@ -237,6 +256,9 @@ body {
     @media (min-width: 550px) {
       .card__side {
         width: 28vw; } }
+    @media (min-width: 1000px) {
+      .card__side {
+        width: 21vw; } }
     .card__side--front {
       display: flex;
       flex-flow: column;
@@ -252,6 +274,10 @@ body {
         font-size: .8em;
         padding-bottom: .5rem; }
     .card__side--back {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 0;
       background-color: #72AEC4;
