@@ -8,15 +8,15 @@
     }
 
     @include breakpointWidth(768px) {
-        padding: 0 5rem 0 5rem;
+        padding: 0 5% 0 5%;
     }
 
     @include breakpointWidth(1000px) {
-        padding: 0 9rem 0 9rem;
+        padding: 0 15% 0 15%;
     }
 
     @include breakpointWidth(1200px) {
-        padding: 0 15rem 0 15rem;
+        padding: 0 23% 0 23%;
     }
 
 

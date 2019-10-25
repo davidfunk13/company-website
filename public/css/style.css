@@ -185,15 +185,15 @@ body {
 
 @media (min-width: 768px) {
   .content {
-    padding: 0 5rem 0 5rem; } }
+    padding: 0 5% 0 5%; } }
 
 @media (min-width: 1000px) {
   .content {
-    padding: 0 9rem 0 9rem; } }
+    padding: 0 15% 0 15%; } }
 
 @media (min-width: 1200px) {
   .content {
-    padding: 0 15rem 0 15rem; } }
+    padding: 0 23% 0 23%; } }
 
 .content__1 {
   display: flex;
@@ -219,8 +219,8 @@ body {
 
 .content__2 {
   height: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
   .content__2 h2,
   .content__2 h3,
   .content__2 h4 {
