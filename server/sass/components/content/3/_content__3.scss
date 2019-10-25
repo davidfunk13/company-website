@@ -1,22 +1,28 @@
 @import './containers';
 
 @mixin content__3 {
+    padding: 5%;
     &__3 {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        height: 100%;
-        h2, h3 {
+        h2,
+        h3 {
             font-family: 'Oswald', sans-serif;
         }
-        
+
         & h2 {
             font-size: 1.5em;
         }
-        
-        & p{
+
+        & p {
             font-family: 'Open Sans', sans-serif;
         }
-        
+
+        h3{
+            margin-bottom: 1rem;
+        }
+
+        h3:nth-of-type(2){
+            text-align: right;
+        }
+
     }
 }

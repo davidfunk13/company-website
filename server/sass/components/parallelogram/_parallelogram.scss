@@ -1,0 +1,8 @@
+.parallelogram {
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    width: 100%;
+    background-color: white;
+    margin: 2rem 0 2rem 0;
+    height: 15rem;
+}

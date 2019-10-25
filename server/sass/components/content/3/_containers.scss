@@ -1,5 +1,17 @@
-.content__3__col {
-    width: 45%;
-    background-color: red;
-    height: 100%;
+.content-3__container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.content-3__text{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.content-3__row {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
 }
