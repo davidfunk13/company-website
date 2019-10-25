@@ -221,12 +221,22 @@ body {
   height: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+  .content__2 h2,
+  .content__2 h3,
+  .content__2 h4 {
+    font-family: 'Raleway', sans-serif; }
   .content__2 h2 {
-    font-family: 'Raleway', sans-serif;
     font-size: 1.5em; }
+  .content__2 h3 {
+    font-size: 1em; }
+  .content__2 h4 {
+    font-size: 1em;
+    color: white;
+    margin-bottom: .25rem; }
   .content__2 p {
     font-family: 'Lato', sans-serif;
-    color: white; }
+    color: white;
+    font-size: .8em; }
 
 .content__3 {
   display: flex;
@@ -261,6 +271,9 @@ body {
     @media (min-width: 1000px) {
       .card__side {
         width: 21vw; } }
+    @media (min-width: 1100px) {
+      .card__side {
+        width: 16vw; } }
     .card__side--front {
       display: flex;
       flex-flow: column;
@@ -278,12 +291,24 @@ body {
     .card__side--back {
       display: flex;
       flex-flow: column;
-      justify-content: center;
+      overflow: hidden;
       align-items: center;
       position: absolute;
       top: 0;
       background-color: #72AEC4;
       transform: rotateY(180deg); }
+      .card__side--back h3 {
+        margin-top: -.75rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        text-align: center;
+        width: 100%;
+        background: white;
+        transform: skewY(-6deg) translateY(1rem); }
+      .card__side--back .card-back-text {
+        margin-top: .75rem;
+        padding: 1rem;
+        line-height: 1.1em; }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {

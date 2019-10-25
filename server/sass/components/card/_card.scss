@@ -1,5 +1,3 @@
-// @import '../content/2/containers';
-
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -23,6 +21,10 @@
 
         @include breakpointWidth(1000px) {
             width: 21vw;
+        }
+        
+        @include breakpointWidth(1100px) {
+            width: 16vw;
         }
 
         &--front {
@@ -50,13 +52,31 @@
         &--back {
             display: flex;
             flex-flow: column;
-            justify-content: center;
+            overflow: hidden;
+
             align-items: center;
             position: absolute;
             top: 0;
 
             background-color: $c-light-accent;
             transform: rotateY(180deg);
+
+            & h3 {
+                margin-top: -.75rem;
+                // border: .5px solid black;
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+                text-align: center;
+                width: 100%;
+                background: white;
+                transform: skewY(-6deg) translateY(1rem);
+            }
+
+            & .card-back-text {
+                margin-top: .75rem;
+                padding: 1rem;
+                line-height: 1.1em;
+            }
         }
     }
 

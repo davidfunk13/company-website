@@ -6,14 +6,30 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
 
-        & h2 {
+        & h2,
+        h3,
+        h4 {
             font-family: 'Raleway', sans-serif;
+        }
+
+        & h2 {
             font-size: 1.5em;
+        }
+
+        & h3 {
+            font-size: 1em;
+        }
+
+        & h4 {
+            font-size: 1em;
+            color: white;
+            margin-bottom: .25rem;
         }
 
         & p {
             font-family: 'Lato', sans-serif;
             color: white;
+            font-size: .8em;
         }
 
     }
