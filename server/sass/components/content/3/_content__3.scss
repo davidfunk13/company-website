@@ -3,9 +3,23 @@
 @mixin content__3 {
     overflow: auto;
 
-    padding: 1rem;
-
     &__3 {
+        padding: 1rem;
+        @include breakpointWidth(768px) {
+            padding: 0 5% 0 5%;
+        }
+
+        @include breakpointWidth(850px) {
+            padding: 0 7% 0 7%;
+        }
+
+        @include breakpointWidth(1000px) {
+            padding: 0 10% 0 10%;
+        }
+
+        @include breakpointWidth(1200px) {
+            padding: 0 15% 0 15%;
+        }
 
         h2,
         h3 {
