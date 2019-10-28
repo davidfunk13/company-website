@@ -16,6 +16,10 @@
         }
     }
 
+    & h2 {
+        font-size: 1.75em;
+    }
+
     @include section__1;
     @include section__2;
     @include section__3;

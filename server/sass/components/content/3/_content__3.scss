@@ -3,8 +3,9 @@
 @mixin content__3 {
     overflow: auto;
 
+    padding: 1rem;
+
     &__3 {
-        padding: 1rem;
 
         h2,
         h3 {
@@ -12,6 +13,11 @@
         }
 
         & h2 {
+            @include breakpointWidth(1000px) {
+                padding-top: 10%;
+            }
+
+            color: white;
             text-align: right;
             padding-right: 5%;
             margin-bottom: 1rem;
@@ -19,7 +25,22 @@
 
         & p {
             font-family: 'Open Sans', sans-serif;
-            line-height: 1.8;
+            line-height: 1.2;
+            font-size: .9em;
+            color: white;
+
+            @include breakpointWidth(400px) {
+                line-height: 1.5;
+                font-size: 1em;
+            }
+
+            @include breakpointWidth(500px) {
+                line-height: 1.6;
+            }
+
+            @include breakpointWidth(658px) {
+                line-height: 2;
+            }
         }
 
         h3 {
@@ -39,8 +60,8 @@
 
             &--1 {
                 img {
-                    width: 54%;
-                    margin-right: 5%;
+                    width: 45%;
+                    margin-right: 10%;
                     float: left;
                 }
             }

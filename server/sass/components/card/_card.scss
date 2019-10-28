@@ -73,8 +73,12 @@
             }
 
             & .card-back-text {
+                & h4{ 
+                    font-size: 1.1em;
+                    padding-bottom: .25rem;
+                }
                 margin-top: .75rem;
-                padding: 1rem;
+                padding: 10%;
                 line-height: 1.1em;
             }
         }
