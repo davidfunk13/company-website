@@ -3,37 +3,53 @@
         display: flex;
         flex-flow: row;
 
-
         & h2 {
             font-family: 'Amatic SC', cursive;
             font-size: 1.75em;
         }
-    
+
         & p {
             font-family: 'Josefin Sans', sans-serif;
-            font-size: 1em;
+
+            @include breakpointWidth(400px) {
+                font-size: 1.2em;
+            }
+
+            @include breakpointWidth(500px) {
+                line-height: 1.6;
+            }
+            @include breakpointWidth(658px) {
+                line-height: 2;
+            }
         }
-    
+
         &--text {
-            padding: 1.25rem 0rem 0rem 1.25rem;
+            padding: 1rem 0rem 0rem 1rem;
         }
-    
+
         &--img {
-            padding: 1.25rem;
-    
+            padding: 1rem;
+
             & h2 {
                 text-align: right;
             }
-    
+
             & p {
                 text-align: right;
                 padding-top: 1.25rem;
             }
-    
+
             & img {
-                width: 100%;
+                @include breakpointWidth(768px) {
+                    width: 40vw;
+                }
+                @include breakpointWidth(980px) {
+                    width: 35vw;
+                }
+
+                width: 50vw;
                 padding-bottom: 1.25rem;
             }
         }
-    }    
+    }
 }
