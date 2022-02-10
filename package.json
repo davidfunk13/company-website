@@ -22,7 +22,7 @@
   "homepage": "https://github.com/davidfunk13/company-website#readme",
   "devDependencies": {
     "concurrently": "^5.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.19.3"
   },
   "dependencies": {
